@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* elemen a yg ada attribut */
+        
+        a[target] {
+            color: red;
+        }
+        /* elemen a yg ada attribut dgn value*/
+        
+        a[target="_blank"] {
+            color: red;
+        }
+        /* elemen p yg ada attribut title yg ada kata 'belajar' */
+        
+        p[title~="belajar"] {
+            color: red;
+        }
+        /* elemen p yg ada attribut title dgn value demikian atau demikian diikuti dgn- */
+        
+        p[title|="belajar"] {
+            color: red;
+        }
+        /* elemen p yg ada attribut title dgn value diawali dgn belajar */
+        
+        p[title^="belajar"] {
+            color: red;
+        }
+        /* sama kayak diatas cmn ini diakhiri */
+        
+        p[title$="belajar"] {
+            color: red;
+        }
+        /* elemen p yg ada attribut title yg mengandung kata belajar */
+        
+        p[title*="belajar"] {
+            color: red;
+        }
+        /* sama aja kyk atas tp tanpa tag, bida buat class or id */
+        
+        [title] {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="" target="_blank">Contoh 1</a>
+    <a href="">Contoh 1</a>
+    <a href="" target="_self">Contoh 1</a>
+    <a href="">Contoh 1</a>
+    <p title="belajar">belajar matematika</p>
+    <p title="belajarrejw">dipilih</p>
+    <p title="belajar-smkd">halii</p>
+</body>
+
+</html>
